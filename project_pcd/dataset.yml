@@ -1,0 +1,7 @@
+path: /content/drive/MyDrive/data_img_label
+train: images
+val: images
+
+# kelas
+nc : 2 # jumlah kelas
+names: ['tidak kantuk', 'kantuk']

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Set karakter encoding dan viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Judul halaman dan referensi ke file CSS dan JavaScript -->
+  <title>YOLO-Deteksi Kantuk</title>
+  <link rel="stylesheet" type="text/css" href="../static/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="../static/index.js"></script>
+</head>
+
+<body>
+  <!-- Kontainer aplikasi -->
+  <div class="app">
+    <!-- Header aplikasi -->
+    <div class="app-header">
+      <!-- Judul aplikasi -->
+      <p class="title-wrap">
+        Deteksi Kantuk
+      </p>
+      <!-- Tombol untuk membuka kamera video -->
+      <button name="cam" class="button" id="opencam">Video Cam</button>
+      <!-- Kontainer untuk menampilkan gambar sebelum diunggah -->
+      <div class="pre-img">
+        <span>
+          <img id="imagebox" src="" />
+        </span>
+      </div>
+      <!-- Form untuk memilih file gambar -->
+      <form>
+        <input id="imageinput" type="file" name="image" onchange="readUrl(this)">
+      </form>
+      <!-- Tombol untuk mengirim gambar -->
+      <button name="send" id="sendbutton" onclick="changeColor()">Kirim</button>
+      <!-- Kontainer untuk tampilan loading -->
+      <div class="loading">
+        <div class="percent">100%</div>
+        <div class="text">SELESAI!</div>
+        <!-- Progress bar -->
+        <div class="progress-bar">
+          <div class="progress">
+          </div>
+        </div>
+      </div>
+      <!-- Tombol untuk output suara Bahasa Inggris -->
+      <button id="voice-english-output" class="voiceoutputbtn-1">Suara Bahasa Inggris</button>
+      <!-- Tombol untuk output suara Bahasa Indonesia -->
+      <button id="voice-indo-output" class="voiceoutputbtn-2">Suara Bahasa Indonesia</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
